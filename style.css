@@ -1,0 +1,361 @@
+html {
+  scroll-behavior: smooth;
+}
+/* Default Styles (Desktop First) */
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #ffffff;
+  color: #1b1b1b;
+  margin: 0;
+  padding: 0;
+}
+
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+ *{
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+
+
+
+
+/* Mobile Styles (Using Media Query) */
+@media only screen and (max-width: 768px) {
+
+  .nav-left {
+      display: none;
+
+  }
+
+  /* Navbar container */
+
+      .navbar {
+          position: fixed;
+          top: 0;
+          width: 100%;
+          background-color: rgba(255, 255, 255, 0.604); /* Semi-transparent background */
+          backdrop-filter: blur(4px); /* Background blur effect */
+          padding: 10px 0;
+          display: flex;
+          justify-content: center; /* Center the navbar */
+          z-index: 1000; /* Ensure it stays above other content */
+          border-bottom: .5px solid rgb(128, 128, 128, 0.5);
+          
+      }
+
+      /* Navbar list */
+      .nav-list {
+          list-style: none;
+          display: flex;
+          margin: 0;
+          padding: 0;
+      }
+
+      /* Navbar items */
+      .nav-list li {
+          margin: 0;
+          padding: 0;
+          margin-top: 8px;
+          margin-bottom: 6px;
+      }
+
+      /* Navbar links */
+      .nav-list a {
+          text-decoration: none;
+          color: rgb(0, 0, 0);
+          padding: 10px 15px;
+          transition: 0.3s;
+      }
+
+      .nav-list a:hover {
+          text-decoration: underline;
+          font-weight: bold;
+          transition: 0.3s;
+      }
+      .nav-list a.active {
+          text-decoration: underline;
+          font-weight: bold;
+      }
+
+      .nav-list a .nav-links {
+        font-size: small;
+      }
+  
+      .hero-section {
+          margin-top: 50%;
+
+      }
+      
+
+      @keyframes typing {
+          from { width: 0 }
+          to { width: 100% }
+      }
+      
+      @keyframes blink-caret {
+          from, to { border-color: transparent }
+          50% { border-color: black; }
+      }
+
+      .changing-text {
+          display: inline;
+          border-right: 2px solid black;
+          overflow: hidden;
+          height: max-content;
+          animation: typing 1s steps(30, end), blink-caret 1s step-end infinite;
+      }
+
+      h1 {
+          font-weight:bolder;
+      }
+      .hero-section {
+          width: 75%;
+          margin-bottom: 112px;
+      }
+       .hero-btn {
+          display: none;
+       }
+       
+       .hero-btn-black {
+          background-color: #ffffff;
+          padding: 15px 25px;
+          margin-top: 32px;
+          border-radius: 50px;
+          border-width:0.8px;
+          color: #000000;
+          transition: 0.2s ease-in-out;
+       }
+       .hero-btn-black:hover {
+          background-color: #000000;
+          padding: 15px 25px;
+          margin-top: 32px;
+          border-radius: 50px;
+          border-width:0.8px;
+          color: #ffffff;
+          transition: 0.2s ease-in-out;
+       }
+
+       .hero-section > p {
+          font-size: small;
+       }
+
+       .container, .portfolio-section {
+         height: max-content;
+         margin: auto;
+         text-align: center;
+       }
+
+       .main-section {
+        height: 60vh;
+       }
+
+
+       
+}
+
+
+
+       /* On my desk section */
+       .ongoing-work, .ongoing-work >.container{
+        background: #000000;
+       }
+       .ongoing-work, .ongoing-work >.container {
+        color: white;
+       }
+
+       .work-cards .work {
+        margin-bottom: 32px;
+        max-width: 480px;
+        border: 0.5px solid rgb(255, 255, 255);
+        padding: 16px;
+        border-radius: 0.25rem;
+        background: #000000;
+       }
+
+       .work-cards .work img {
+        object-fit: cover;
+        width: 100%;
+        border-radius: 0.25rem;
+        border: 0.5px solid rgba(156, 156, 156, 0.314)
+       }
+
+       
+       .work {
+        text-align: left;
+        color: white;
+     }
+
+       .work-cards .work p {
+          font-size: small;
+          margin-bottom: 32px;
+       }
+
+       .work-cards .work a {
+        font-size: small;
+        text-decoration: none;
+        color: white;
+        border: 0.25px solid white;
+        padding: 8px 16px;
+        border-radius: 1.5rem;
+     }
+       .work-cards .work a:hover {
+        font-size: small;
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        border: 0.25px solid rgb(0, 0, 0);
+        padding: 8px 16px;
+        border-radius: 1.5rem;
+        background-color: #ffffff;
+        transition: 0.3s;
+     }
+
+     .work-content {
+      padding-bottom: 16px;
+     }
+
+       /*********  portfolio section ********/
+       .container, .portfolio-section {
+         height: max-content;
+         margin: auto;
+         text-align: center;
+         padding: auto;
+         margin-bottom: 48px;
+
+       }
+
+       #liltext {
+        font-size: small;
+       }
+       .portfolio-section h2, .ongoing-work h2{
+          padding: 16px;
+          margin-bottom: 32px;
+          margin-top: -30px;
+       }
+
+
+        .cards a {
+          text-decoration: none;
+          color: #000000;
+          transition: ease 0.3s;
+        } 
+        
+        .cards .card:hover {
+          background-color: #000000;
+          color: #ffffff;
+          font-size: 1.1rem;
+          transition: ease 0.3s;
+          
+        }
+
+        .cards p {
+          font-size: medium;
+
+        }
+        .cards .card {
+          border: .9px solid grey;
+          margin-top: 16px;
+          border-radius: 8px;
+          padding-left: 16px;
+          padding-right: 16px;
+          height: 160px;
+          transition: ease 0.3s;
+        }
+
+
+
+
+        /********* Foooter styleee*************/
+
+        footer {
+          margin: auto;
+          text-align: center;
+          padding: 16px;
+  
+          
+        }
+        
+        .footer-twin {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          gap: 64px;
+          margin-left: 8px;
+          margin-right: 8px;
+        }
+
+        .footer-twin button {
+          background-color: #ffffff;
+          border: 0.5px solid grey;
+          border-radius: 100%;
+          padding-top: 4px;
+          padding-left: 4px;
+          padding-right: 4px;
+        }
+    
+
+        footer h1 {
+          font-size: 56px;
+          font-weight: 800;
+          color: rgba(0, 0, 0, 0.206);
+          margin: 16px;
+
+        }
+      
+       .footer-buttons #one{
+          font-size: large;
+          background-color: #ffffff;
+          padding: 15px 25px;
+          margin-top: 32px;
+          border-radius: 50px;
+          border-width:0.8px;
+          color: #000000;
+          transition: 0.2s ease-in-out;
+       }
+
+       .footer-buttons #two{
+          font-size: large;
+          background-color: #ffffff;
+          padding: 15px 35px;
+          margin-top: 32px;
+          margin-bottom: 32px;
+          border-radius: 50px;
+          border-width:0.8px;
+          color: #000000;
+          transition: 0.2s ease-in-out;
+       }
+
+       #one:hover {
+          background-color: #000000;
+          color: #ffffff;
+       }
+       #two:hover {
+          background-color: #000000;
+          color: #ffffff;
+       }
+
+
+       footer p {
+          font-size: small;
+       }
+
+       footer p .bold {
+          font-weight: bold;
+      }
+
+       
+       
+       #desktop {
+          display: none;
+       }

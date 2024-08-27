@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+    
+    <title></title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="nav-left">
+                <a href="#">Jeganathan</a>
+            </div>
+            <div class="nav-right">
+                <ul class="nav-list">
+                    <li><a href="index.html" id="home-link"><span class="nav-links">Home</span></a></li>
+                    <li><a href="./Pages/about.html"><span class="nav-links">About</span></a></li>
+                    <li><a href="./Pages/Portfolio.html"><span class="nav-links">Portfolio</span></a></li>
+                    <li><a href="./Pages/blog.html"><span class="nav-links">Blog</span></a></li>
+                </ul>
+            </div>
+            
+        </div>
+    </header>
+    
+    
+
+    <main id="main-section" class="main-section">
+
+    
+        <center>
+            <div class="hero-section">
+                <p id="hero-hello">
+                    Hello There! 👋 I'm 
+                </p>
+                <h1><span class="changing-text"></span></h1>
+                <p>I'm passionate about learning and exploring everything this amazing planet has to offer.</p>
+                <button onclick="window.location.href='#bringtoportfolio'" class="hero-btn">View Portfolio</button>
+                <button onclick="window.location.href='#contact-section'" class="hero-btn-black">Get in Touch</button>
+
+            </div>
+        </center>
+
+
+    </main>
+
+    <section class="ongoing-work">
+        <div class="container">
+            <div>
+                <p id="liltext">What's on</p>
+                <h2>My Desk</h2>
+            </div>
+            <div class="work-cards">  
+            
+            <div class="work card-1">
+                <img src="./Assets/Images/Bromini2.jpg" alt="">
+                <div class="work-content">
+                    <h3 class="card-title">This is the title of the card item</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere cupiditate laboriosam, illum consequatur hic sit quod.</p>
+                    <a href="./Pages/Portfolio.html">Check Out</a>
+                </div>
+            </div>
+            <div class="work card-1">
+                <img src="https://www.snexplores.org/wp-content/uploads/2023/08/1440_gravity-storage-of-E_feat.jpg" alt="">
+                <div class="work-content">
+                    <h3 class="card-title">This is the title of the card item</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere cupiditate laboriosam, illum consequatur hic sit quod.</p>
+                    <a href="./Pages/Portfolio.html">Check Out</a>
+                </div>
+            </div>
+            <div class="work card-1">
+                <img src="https://www.snexplores.org/wp-content/uploads/2023/08/1440_gravity-storage-of-E_feat.jpg" alt="">
+                <div class="work-content">
+                    <h3 class="card-title">This is the title of the card item</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere cupiditate laboriosam, illum consequatur hic sit quod.</p>
+                    <a href="./Pages/Portfolio.html">Check Out</a>
+                </div>
+            </div>
+            
+        </div>
+
+    </section>
+    
+
+    <div class="portfolio-section">
+        <div class="container">
+            <p id="liltext">Explore my</p>
+            <h2>Portfolio</h2>
+                <div class="cards">
+                    <a href=""><div class="card">
+                        <h4>Lorem ipsum</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+                    </div></a>
+                    <a href=""><div class="card">
+                        <h4>Lorem ipsum</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+                    </div></a>
+                    <a href=""><div class="card">
+                        <h4>Lorem ipsum</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+                    </div></a>
+                </div>
+        </div>
+    </div>
+
+<hr>
+    <footer>
+
+        <div class="footer-twin">
+            <div><h6>&copy; 2024</h6></div>
+            <div><button onclick="window.location.href='#'"><img src="./Assets/Icons/up-arrow-svgrepo-com.svg" alt="back to top"></button></div>
+        </div>
+
+        <h1>GET IN TOUCH</h1>
+       
+
+        <div class="footer-buttons">
+            <button onclick="window.location.href='https://www.linkedin.com/in/jeganathans/'" id="one">LinkedIn</button>
+            <button onclick="window.location.href='https://github.com/'" id="two">GitHub</button>
+            <button onclick="window.location.href='Contact.html'" id="desktop" >Contact Form</button>
+            <P>HandCrafted with ❤️ by <span class="bold">Jegan</span></P>
+        </div>
+    </footer>
+</body>
+
+<script src="script.js"></script>
+
+<script>
+    document.getElementById('home-link').classList.add('active');
+</script>
+</html>

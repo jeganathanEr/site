@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title></title>
+
+    <style>
+
+        .top-space {
+            height: 16vh;
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+
+        }
+
+
+
+        
+        @media only screen and (max-width: 768px) {
+            .blog-hero-btn {
+            font-size: large;
+            background-color: #ffffff;
+            padding: 15px 25px;
+            margin-top: 32px;
+            border-radius: 50px;
+            border-width:0.8px;
+            color: #000000;
+            transition: 0.2s ease-in-out;
+         }
+         .blog-hero-btn:hover{
+                background-color: #000000;
+                padding: 15px 25px;
+                margin-top: 32px;
+                border-radius: 50px;
+                border-width:0.8px;
+                color: #ffffff;
+                transition: 0.2s ease-in-out;
+            }
+
+         .blog-hero {
+            margin-bottom: 32px;
+            text-align: center;
+            padding: 8px;
+         }
+
+        .intro-section {
+        padding: 40px;
+        background: linear-gradient(45deg,#edff8a8c,#D1FBFF8c,#F7B2EB8c);
+        text-align: center;
+        border-radius: 8px;
+        margin-bottom: 64px;
+        margin-top: 64px;
+        margin-left: 8px;
+        margin-right: 8px;
+        
+        }
+
+        .intro-title {
+            font-size: 28px;
+            font-weight: bold;
+            color: #030303;
+            margin-bottom: 15px;
+        }
+
+        .intro-text {
+            font-size: 16px;
+            color: #666;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+
+        .blog-cards {
+            margin-left: 8px;
+            margin-right: 8px;
+        }
+        .blog-card {
+        display: flex;
+        align-items: center;
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        overflow: hidden;
+        width: 100%;
+        max-width: 600px;
+        color: #333;
+        margin-bottom: 16px;
+        
+    }
+
+    .blog-image {
+        width: 140px;
+        height: 140px;
+        object-fit: cover;
+        border-right: 1px solid #e0e0e0;
+    }
+
+    .blog-content {
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .blog-title {
+        font-size: 16px;
+        font-weight: bold;
+        margin: 0 0 10px;
+        color: #000;
+    }
+
+    .blog-excerpt {
+        font-size: 12px;
+        color: #606060;
+        margin: 0 0 15px;
+    }
+
+    .blog-meta {
+        display: flex;
+        justify-content: space-between;
+        font-size: 10px;
+        color: #909090;
+    }
+
+    .blog-author, .blog-date {
+        margin: 0;
+    }
+
+    .blogposts-title {
+        text-align: center;
+        margin-top: 64px;
+        margin-bottom: 64px;
+    }
+
+    .blogposts-title p {
+        font-size: small;
+    }
+    .blogposts-title h2 {
+        margin-top: -16px;
+    }
+    main {
+        margin-bottom: 64px;
+    }
+
+        }
+
+        
+
+
+    
+    </style>
+</head>
+<body>
+    <header class="navigation-bar">
+        <div class="navbar">
+            <div class="nav-left">
+                <a href="#">Jeganathan</a>
+            </div>
+            <div class="nav-right">
+                <ul class="nav-list">
+                    <li><a href="../index.html" ><span class="nav-links">Home</span></a></li>
+                    <li><a href="./about.html"><span class="nav-links">About</span></a></li>
+                    <li><a href="./Portfolio.html"><span class="nav-links">Portfolio</span></a></li>
+                    <li><a href="./blog.html" id="home-link"><span class="nav-links">Blog</span></a></li>
+                </ul>
+            </div>
+            
+        </div> 
+    </header>
+    
+    <div class="top-space">
+
+    </div>
+
+    <center>
+        <div class="blog-hero">
+            <img src="../Assets/Icons/Group 1.svg" alt="">
+        </div>
+
+        <button onclick="window.location.href='#getto'" class="blog-hero-btn">Explore Blogs</button>
+    </center>
+
+    <div class="intro-section">
+        <h2 class="intro-title">Welcome to My Blog</h2>
+        <p class="intro-text">
+            Welcome to my corner of the internet, where I share my latest insights, ideas, and experiences. Dive in to explore topics ranging from web development to design, and everything in between.
+        </p>
+    </div>
+
+    <hr  id="getto">
+
+
+
+
+
+    <main>
+        <div class="blog-cards">
+            <div class="blogposts-title">
+                <p class="lil-text">Explore my</p>
+                <h2>Blog posts</h2>
+            </div>
+
+            
+            <a href="">
+                <div class="blog-card">
+                    <img src="https://media.hswstatic.com/eyJidWNrZXQiOiJjb250ZW50Lmhzd3N0YXRpYy5jb20iLCJrZXkiOiJnaWZcL25pa29sYS10ZXNsYS1vcmlnLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6IjEyMDAifX19" alt="Blog Image" class="blog-image">
+                    <div class="blog-content">
+                        <h3 class="blog-title">Blog Title</h3>
+                        <p class="blog-excerpt">A brief excerpt or summary of the blog content to give readers a quick preview.</p>
+                        <div class="blog-meta">
+                            <p class="blog-author">By Author Name</p>
+                            <p class="blog-date">Aug 5, 2024</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="">
+            <div class="blog-card">
+                <img src="https://media.gettyimages.com/id/502439062/video/drunk-man-walking.jpg?s=640x640&k=20&c=_isy1f6ylAanILdKCC7fEYNCe8oPmeeUeOJmH4I1JvA=" alt="Blog Image" class="blog-image">
+                <div class="blog-content">
+                    <h3 class="blog-title">Blog Title</h3>
+                    <p class="blog-excerpt">A brief excerpt or summary of the blog content to give readers a quick preview.</p>
+                    <div class="blog-meta">
+                        <p class="blog-author">By Author Name</p>
+                        <p class="blog-date">Aug 5, 2024</p>
+                    </div>
+                </div>
+            </div>
+            </a>
+
+
+            <a href="">
+            <div class="blog-card">
+                <img src="https://preview.redd.it/ad5iframit841.jpg?width=1080&crop=smart&auto=webp&s=b904da772d6f437be697f243f7bfa4297af4e613" alt="Blog Image" class="blog-image">
+                <div class="blog-content">
+                    <h3 class="blog-title">Blog Title</h3>
+                    <p class="blog-excerpt">A brief excerpt or summary of the blog content to give readers a quick preview.</p>
+                    <div class="blog-meta">
+                        <p class="blog-author">By Author Name</p>
+                        <p class="blog-date">Aug 5, 2024</p>
+                    </div>
+                </div>
+            </div>
+            </a>
+
+
+            <a href="">
+            <div class="blog-card">
+                <img src="https://generationiron.com/wp-content/uploads/2021/08/header-22.jpg" alt="Blog Image" class="blog-image">
+                <div class="blog-content">
+                    <h3 class="blog-title">Blog Title</h3>
+                    <p class="blog-excerpt">A brief excerpt or summary of the blog content to give readers a quick preview.</p>
+                    <div class="blog-meta">
+                        <p class="blog-author">By Author Name</p>
+                        <p class="blog-date">Aug 5, 2024</p>
+                    </div>
+                </div>
+            </div>
+            </a>
+
+
+            <a href="">
+            <div class="blog-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAV9Grjt6zQWWZQloRZosG_8dGe35b7Y0SRQ&s" alt="Blog Image" class="blog-image">
+                <div class="blog-content">
+                    <h3 class="blog-title">Blog Title</h3>
+                    <p class="blog-excerpt">A brief excerpt or summary of the blog content to give readers a quick preview.</p>
+                    <div class="blog-meta">
+                        <p class="blog-author">By Author Name</p>
+                        <p class="blog-date">Aug 5, 2024</p>
+                    </div>
+                </div>
+            </div>
+            </a>
+
+
+
+            <a href="">
+            <div class="blog-card">
+                <img src="https://imageio.forbes.com/blogs-images/evaamsen/files/2019/05/Leonardo_da_Vinci_-_Anatomical_studies_of_the_shoulder_-_WGA12824.jpg?height=446&width=711&fit=bounds" alt="Blog Image" class="blog-image">
+                <div class="blog-content">
+                    <h3 class="blog-title">Blog Title</h3>
+                    <p class="blog-excerpt">A brief excerpt or summary of the blog content to give readers a quick preview.</p>
+                    <div class="blog-meta">
+                        <p class="blog-author">By Author Name</p>
+                        <p class="blog-date">Aug 5, 2024</p>
+                    </div>
+                </div>
+            </div>
+            </a>
+            
+        </div>
+    </main>
+    
+
+    <hr>
+    <footer>
+
+        <div class="footer-twin">
+            <div><h6>&copy; 2024</h6></div>
+            <div><button onclick="window.location.href='#'"><img src="../Assets/Icons/up-arrow-svgrepo-com.svg" alt="back to top"></button></div>
+        </div>
+
+        <h1>GET IN TOUCH</h1>
+       
+
+        <div class="footer-buttons">
+            <button onclick="window.location.href='https://www.linkedin.com/in/jeganathans/'" id="one">LinkedIn</button>
+            <button onclick="window.location.href='https://github.com/'" id="two">GitHub</button>
+            <button onclick="window.location.href='Contact.html'" id="desktop" >Contact Form</button>
+            <P>HandCrafted with ❤️ by <span class="bold">Jegan</span></P>
+        </div>
+    </footer>
+</body>
+</body>
+
+<script src="script.js"></script>
+
+<script>
+    document.getElementById('home-link').classList.add('active');
+</script>
+</html>
