@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Document</title>
+
+    <style>
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+
+  
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  
+ 
+   *{
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+  }
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+  }
+  
+
+
+
+  @keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+            .read-page {
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 20px;
+                line-height: 1.6;
+                color: #333;
+                
+            }
+
+            .post-title {
+                font-size: 36px;
+                font-weight: bold;
+                margin-bottom: 20px;
+                color: #000;
+                line-height: normal;
+            }
+
+            .post-image {
+                width: 100%;
+                height: auto;
+                margin-bottom: 20px;
+                border-radius: 8px;
+            }
+
+            .post-content {
+                font-size: 18px;
+                margin-bottom: 20px;
+                color: #444;
+            }
+
+            .post-quote {
+                font-size: 24px;
+                font-style: italic;
+                color: #666;
+                margin: 30px 0;
+                padding: 20px;
+                border-left: 4px solid #ddd;
+                background-color: #f9f9f9;
+            }
+
+            .post-subtitle, .post-subheading {
+                font-size: 28px;
+                font-weight: bold;
+                margin-top: 30px;
+                margin-bottom: 15px;
+                color: #222;
+            }
+
+            .post-list {
+                margin-bottom: 20px;
+                padding-left: 20px;
+            }
+
+            .post-list li {
+                margin-bottom: 10px;
+                font-size: 18px;
+                color: #555;
+            }
+
+            .mark {
+                background-color: #ffeb3b;
+                padding: 2px 5px;
+                border-radius: 3px;
+            }
+
+            main {
+                margin-left: 8px;
+                padding: 2px;
+            }
+
+            .go-back {
+                display: flex;
+                margin-top: 16px;
+                margin-left: 16px;
+            }
+
+            .back-cta {
+                background-color: #ffffff;
+                font-family: "Montserrat", sans-serif;
+                border: none;
+                font-size: large;
+                font-weight: normal;
+                transition: 0.3s;
+                text-decoration: underline;
+                text-underline-offset: 3px;
+            }
+            .back-cta:hover {
+                background-color: #ffffff;
+                font-family: "Montserrat", sans-serif;
+                border: none;
+                font-size: large;
+                font-weight: 600;
+                transition: 0.3s;
+            }
+         }
+    </style>
+</head>
+<body>
+    
+    
+    <div class="go-back">
+        <img src="../Assets/Icons/left-chevron-svgrepo-com.svg" alt="">
+        <button onclick="window.history.back() " class="back-cta">Back</button>
+    </div>
+
+    <main>
+        <div class="read-page">
+            <h1 class="post-title">The Art of Crafting a Perfect Blog Post</h1>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXVnonKiTz4LrskokpNDAY11WQmbKC7yDQ7g&s" alt="Blog Post Image" class="post-image">
+        
+            <p class="post-content">
+                Writing a blog post is not just about putting words on a page; it's about telling a story that resonates with your readers. In this guide, we'll explore the essential elements that make a blog post stand out.
+            </p>
+        
+            <blockquote class="post-quote">
+                "A great blog post is not just informative but also engaging, making the reader feel like they are part of a conversation."
+            </blockquote>
+        
+            <p class="post-content">
+                Before you begin, it's important to have a clear idea of what you want to convey. A well-defined topic and a structured outline can go a long way in ensuring your post is coherent and impactful.
+            </p>
+        
+            <h2 class="post-subtitle">Key Elements of a Great Blog Post</h2>
+            <ul class="post-list">
+                <li>**Engaging Title:** Your title should grab attention and make readers want to click.</li>
+                <li>**Introduction:** Start with a hook that draws readers in and introduces the topic.</li>
+                <li>**Clear Structure:** Break your content into sections with subheadings to make it easy to follow.</li>
+                <li>**Visuals:** Use images, videos, and infographics to complement your text.</li>
+                <li>**Call to Action:** Encourage readers to engage further, whether by commenting, sharing, or exploring more of your content.</li>
+            </ul>
+        
+            <p class="post-content">
+                Remember, the key to a successful blog post is not just the content itself, but how you present it. 
+                <mark>Highlight important points</mark> to ensure they stand out to the reader.
+            </p>
+        
+            <h3 class="post-subheading">Conclusion</h3>
+            <p class="post-content">
+                Crafting the perfect blog post is an art that takes time to master. By focusing on these essential elements, you can create content that not only informs but also engages and inspires your audience.
+            </p>
+        </div>
+    </main>
+    
+</body>
+</html>

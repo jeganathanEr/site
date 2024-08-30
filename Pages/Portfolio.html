@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title></title>
+</head>
+
+<style>
+    .top-space {
+            height: 16vh;
+    }
+
+    html {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .portfolio-hero {
+        margin: 8px;
+        padding: 8px;
+        margin-bottom: 32px;
+    }
+    .hero-text {
+        
+        font-size: 2rem;
+        line-height: 3rem;
+        text-align: left;
+        max-width: 80%;
+    }
+
+    #changing-text {
+        display: inline-block;
+        /* Optional: Add transitions for smooth effects */
+        transition: opacity 0.5s ease;
+        font-weight: 500;
+    }        
+        
+    /* portfolio andha cool flex layout */
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 100%;
+            flex-direction: column;
+            margin: 0 auto;
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, auto);
+            gap: 8px;
+            margin-left: 8px;
+            margin-right: 8px;
+            padding-left: 8px;
+            padding-right: 8px;
+            margin-bottom: 96px;
+        }
+
+        .portfolio-item {
+            background-color: #000;
+            color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-sizing: border-box;
+            border: 1px solid #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            transition-duration: 400ms;
+            text-align: center;
+        }
+
+        .portfolio-item:hover {
+            background-color: #ffffff;
+            color: #000000;
+            padding: 20px;
+            border-radius: 10px;
+            box-sizing: border-box;
+            border: 1px solid #000000;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+
+        }
+
+        .portfolio-item a {
+            color: inherit; /* Inherit color from the parent element */
+            text-decoration: none; /* Remove underline */
+        }
+
+        .portfolio-item.small {
+            grid-column: span 1;
+        }
+
+        .portfolio-item.large {
+            grid-column: span 3;
+        }
+
+
+        .portfolio-item h3 {
+            font-size: 1rem;
+        }
+
+
+
+        /* hero ku keel section */
+
+        .latest-works {
+            text-align: center;
+            color: #ffffff;
+            margin-top: 48px;
+            margin-bottom: 48px;
+        }
+        .latest-works #liltext {
+            margin-bottom: -18px;
+        }
+
+        .showcase-container {
+            background: #000000;
+            padding: 16px;
+        }
+
+        .showcase-card {
+            padding-top: 16px;
+            padding-bottom: 32px;
+            padding-left: 8px;
+            padding-right: 8px;
+            color: #ffffff;
+            margin-top: 32px;
+            border-bottom: 0.2px solid rgba(255, 255, 255, 0.204);
+        }
+        .showcase-card p {
+            color: #ffffffc1;
+            font-size: 0.9rem;
+            margin-top: 32px;
+            margin-bottom: 32px;
+        }
+
+        .showcase-card img {
+            object-fit: cover;
+            width: 100%;
+            border-radius: 0.25rem;
+            border: 0.5px solid rgba(156, 156, 156, 0.314)
+        }
+
+        .showcase-card button {
+            border: 0.5px solid rgb(255, 255, 255);
+            border-radius: 1rem;
+            background: 000000;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            padding-left: 16px;
+            padding-right: 16px;
+            font-family: inherit;
+            transition: 0.3s;
+            cursor: pointer;
+
+            &:hover {
+                color: black;
+                background: white;
+                transition: 0.3s;
+            }
+            
+        }
+
+
+
+        .status {
+            display: flex;
+            gap: 8px;
+            text-wrap: nowrap;
+            width: 75%;
+            flex-wrap: wrap;
+            margin-top: 16px;
+            margin-bottom: 32px;
+
+        }
+
+        h6 {
+            margin: 0;
+            padding: 0;
+        }
+
+        
+        .status-purple h6 {
+            background-color: #2E073F;
+            color: #D580FF;
+            border-radius: 1rem;
+            font-weight: 400;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding-top: 4px;
+            padding-bottom: 4px;
+            padding-left: 8px;
+            padding-right: 8px;
+
+            .dot {
+            width: 0.5rem;
+            height: 0.5rem;
+            background-color: #d279ff;
+            border-radius: 50%;
+            box-shadow: 0 0 10px #D580FF, 0 0 20px #D580FF, 0 0 30px #D580FF;
+        }
+
+        }
+        .status-blue h6 {
+            background-color: #02403D;
+            color: #08FFF4;
+            border-radius: 1rem;
+            border-radius: 1rem;
+            font-weight: 400;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding-top: 4px;
+            padding-bottom: 4px;
+            padding-left: 8px;
+            padding-right: 8px;
+            .dot {
+            width: 0.5rem;
+            height: 0.5rem;
+            background-color:  #08FFF4;
+            border-radius: 50%;
+            box-shadow: 0 0 10px #00FFFF, 0 0 20px #00FFFF;
+            }
+
+        }
+        .status-green h6 {
+            background-color:#014017;
+            color: rgb(128, 255, 0);
+            border-radius: 1rem;
+            border-radius: 1rem;
+            font-weight: 400;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding-top: 4px;
+            padding-bottom: 4px;
+            padding-left: 8px;
+            padding-right: 8px;
+            .dot {
+            width: 0.5rem;
+            height: 0.5rem;
+            background-color:  #80ff00;
+            border-radius: 50%;
+            box-shadow: 0 0 10px #80ff00, 0 0 20px #80ff00, 0 0 30px #6FD904;
+            }
+
+        }
+        
+</style>
+<body>
+    <div class="top-space">
+        
+    </div>
+    <header>
+        <div class="navbar">
+            <div class="nav-left">
+                <a href="#">Jeganathan</a>
+            </div>
+            <div class="nav-right">
+                <ul class="nav-list">
+                    <li><a href="../index.html" ><span class="nav-links">Home</span></a></li>
+                    <li><a href="./about.html"><span class="nav-links">About</span></a></li>
+                    <li><a href="./Portfolio.html" id="home-link"><span class="nav-links">Portfolio</span></a></li>
+                    <li><a href="./blog.html"><span class="nav-links">Blog</span></a></li>
+                </ul>
+            </div>
+            
+        </div>
+    </header>
+    
+
+    <main class="portfolio-hero">
+        <div class="hero-text">
+            <span id="prefix">Welcome to my Portfolio where all I do is</span> <span id="changing-text">Think 🤔</span>
+        </div>          
+    </main>
+
+    
+    
+    <div class="portfolio-grid">
+        
+        <div class="portfolio-item small">
+            <a href="./portfolio/collgeiate.html"><h3>Software</h3>
+            </a>
+        </div>
+        
+        <div class="portfolio-item large">
+            <a href="Software.html">
+            <h3>Engineering</h3>
+            </a>
+        </div>
+        <div class="portfolio-item large">
+            <a href="Engineering.html"><h3>Socio - Academic</h3>
+        </a>
+            
+        </div>
+        <div class="portfolio-item small">
+            <a href="Socio -Academic.html"><h3>Collegiate</h3>
+            </a>
+            
+        </div>
+    </div>
+    
+    <div class="showcase-container">
+        <div class="latest-works">
+            <p id="liltext">Discover my</p>
+            <h2>Latest Endeavors</h2>
+        </div>
+
+        <article class="showcase-card">
+            <center><img src="../Assets/Images/Bromini2.jpg"  alt=""></center>
+            <div class="showcase-excerpt">
+                <h3>Bromini - A chill chatbot</h3>
+                <div class="status">
+                    <span class="status-purple"><h6><div class="dot"></div>Software</h6></span>
+                    <span class="status-blue"><h6><div class="dot"></div>testing stage</h6></span>
+                    <span class="status-green"><h6><div class="dot"></div>deployed</h6></span>
+                </div>
+                <p>This chatbot is fed with custom data that can provide personalized messages and can reply like a friend </p>
+            </div>
+            <button>Try This</button>
+        </article>
+        <article class="showcase-card">
+            <center><img src="../Assets/Images/Bromini2.jpg"  alt=""></center>
+            <div class="showcase-excerpt">
+                <h3>Bromini - A chill chatbot</h3>
+                <div class="status">
+                    <span class="status-purple"><h6><div class="dot"></div>Software</h6></span>
+                    <span class="status-blue"><h6><div class="dot"></div>testing stage</h6></span>
+                    <span class="status-green"><h6><div class="dot"></div>deployed</h6></span>
+                </div>
+                <p>This chatbot is fed with custom data that can provide personalized messages and can reply like a friend </p>
+            </div>
+            <button>Try This</button>
+        </article>
+        <article class="showcase-card">
+            <center><img src="../Assets/Images/Bromini2.jpg"  alt=""></center>
+            <div class="showcase-excerpt">
+                <h3>Bromini - A chill chatbot</h3>
+                <div class="status">
+                    <span class="status-purple"><h6><div class="dot"></div>Software</h6></span>
+                    <span class="status-blue"><h6><div class="dot"></div>testing stage</h6></span>
+                    <span class="status-green"><h6><div class="dot"></div>deployed</h6></span>
+                </div>
+                <p>This chatbot is fed with custom data that can provide personalized messages and can reply like a friend </p>
+            </div>
+            <button>Try This</button>
+        </article>
+    </div>
+
+
+    <hr>
+    <footer>
+
+        <div class="footer-twin">
+            <div><h6>&copy; 2024</h6></div>
+            <div><button onclick="window.location.href='#'"><img src="../Assets/Icons/up-arrow-svgrepo-com.svg" alt="back to top"></button></div>
+        </div>
+
+        <h1>GET IN TOUCH</h1>
+       
+
+        <div class="footer-buttons">
+            <button onclick="window.location.href='https://www.linkedin.com/in/jeganathans/'" id="one">LinkedIn</button>
+            <button onclick="window.location.href='https://github.com/'" id="two">GitHub</button>
+            <button onclick="window.location.href='Contact.html'" id="desktop" >Contact Form</button>
+            <P>HandCrafted with ❤️ by <span class="bold">Jegan</span></P>
+        </div>
+    </footer>
+</body>
+
+<script src="script.js"></script>
+
+<script>
+    document.getElementById('home-link').classList.add('active');
+
+    const textElement = document.getElementById('changing-text');
+const words = ['Think 🤔', 'Make 🤩', 'Break 😵', 'Repeat 😃'];
+let currentIndex = 0;
+
+function changeText() {
+  textElement.style.opacity = 0;
+  setTimeout(() => {
+    textElement.textContent = words[currentIndex];
+    textElement.style.opacity = 1;
+    currentIndex = (currentIndex + 1) % words.length;
+  }, 400); // Delay for the fade effect
+}
+
+setInterval(changeText, 1700); // Change text every 2 seconds
+
+</script>
+</html>
